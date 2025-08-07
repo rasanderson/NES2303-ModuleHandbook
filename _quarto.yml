@@ -4,7 +4,7 @@ project:
 book:
   title: "NES2303 Module Handbook"
   reader-mode: true
-
+  
   page-footer:
     left: |
       NES2303 Experimental design and statistics. 2025-26 Edition. Roy Sanderson.
@@ -19,7 +19,7 @@ book:
   repo-actions: [edit, issue]
 
   author: "Roy Sanderson"
-  date: "07/08/2025"
+  date: "08/08/2025"
   chapters:
     - index.qmd
     - intro.qmd
@@ -45,6 +45,13 @@ format:
     number-sections: true
     filters: [boxed-span.lua]
     include-in-header: preamble.tex
+    include-before: |
+      \thispagestyle{empty}
+      \begin{center}
+      \includegraphics[width=\textwidth]{cover.jpg}
+      \end{center}
+      \newpage
+  
 
 
 editor: source
