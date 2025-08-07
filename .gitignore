@@ -47,3 +47,25 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+/.quarto/
+
+# Extras that may have been missed
+.Rproj.user
+.Rhistory
+*_cache
+*_files
+_main.rds
+_book
+*.md
+!CODE_OF_CONDUCT.md
+/*.html
+!plausible.html
+search_index.json
+libs
+*.rds
+_main.*
+tmp-pdfcrop-*
+figures
+/.quarto/
+site_libs
