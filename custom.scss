@@ -27,6 +27,16 @@ table, td, th {
   color: #637238;
 }
 
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.center .boxed {
+  display: inline-block;
+}
+
 div.sidebar-item-container .active {
   font-weight: bold;
 }

@@ -40,6 +40,9 @@ format:
     documentclass: scrreprt
     toc: true
     number-sections: true
+    filters: [boxed-span.lua]
+    include-in-header: preamble.tex
+
 
 editor: source
 
