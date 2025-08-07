@@ -1,0 +1,48 @@
+
+function stringify_with_latex(el)
+  local result = {}
+  for _, item in ipairs(el) do
+    if item.t == "Str" then
+      table.insert(result, item.text)
+    elseif item.t == "Strong" then
+      table.insert(result, "\textbf{" .. stringify_with_latex(item.content)[1] .. "}")
+    elseif item.t == "Emph" then
+      table.insert(result, "\emph{" .. stringify_with_latex(item.content)[1] .. "}")
+    elseif item.t == "Code" then
+      table.insert(result, "\texttt{" .. item.text .. "}")
+    elseif item.t == "Space" then
+      table.insert(result, " ")
+    elseif item.t == "Span" and item.classes:includes("boxed") then
+      local inner = stringify_with_latex(item.content)[1]
+      table.insert(result, "\fcolorbox{gray}{white}{" .. inner .. "}")
+    else
+      table.insert(result, pandoc.utils.stringify(item))
+    end
+  end
+  return result
+end
+
+function Span(el)
+  if el.classes:includes("boxed") then
+    local content = stringify_with_latex(el.content)[1]
+    return pandoc.RawInline("latex", "\fcolorbox{gray}{white}{" .. content .. "}")
+  end
+end
+
+function Div(el)
+  if el.classes:includes("center") then
+    local content = stringify_with_latex(el.content)[1]
+    return pandoc.RawBlock("latex", "\begin{center}
+" .. content .. "
+\end{center}")
+  end
+end
+
+function Header(el)
+  for i, item in ipairs(el.content) do
+    if item.t == "Span" and item.classes:includes("boxed") then
+      el.content[i] = Span(item)
+    end
+  end
+  return el
+end

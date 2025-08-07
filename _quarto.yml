@@ -1,0 +1,59 @@
+project:
+  type: book
+
+book:
+  title: "NES2303 Module Handbook"
+  reader-mode: true
+  
+  page-footer:
+    left: |
+      NES2303 Experimental design and statistics. 2025-26 Edition. Roy Sanderson.
+    right: |
+      This module handbook was built with <a href="https://quarto.org/">Quarto</a>.
+
+  cover-image: cover.jpg
+  favicon: cover.jpg
+  site-url: https://ncl.instructure.com/courses/67972
+  repo-url: https://github.com/rasanderson/NES2303-ModuleHandbook
+  repo-branch: main
+  repo-actions: [edit, issue]
+
+  author: "Roy Sanderson"
+  date: "08/08/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - biomod.qmd
+    - goals.qmd
+    - structure.qmd
+    - weekly.qmd
+    - assessments.qmd
+    - software.qmd
+    - stage3.qmd
+    - reports.qmd
+    
+format:
+  html:
+    output-dir: docs
+    theme:
+      - cosmo
+      - custom.scss
+      - brand
+    code-link: true
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    number-sections: true
+    filters: [boxed-span.lua]
+    include-in-header: preamble.tex
+    include-before: |
+      \thispagestyle{empty}
+      \begin{center}
+      \includegraphics[width=\textwidth]{cover.jpg}
+      \end{center}
+      \newpage
+  
+
+
+editor: source
+

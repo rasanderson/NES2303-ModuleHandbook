@@ -1,0 +1,50 @@
+# Introduction to Biostatistical Modelling
+
+To some extent the above heading would be a better title for this course than "Experimental Design and Statistics". Some of you, especially those focussed on cell and molecular biology and / or working in the laboratories are likely to be conducting formal experiments. Others, especially those collecting ecological / environmental data, might be undertaking more survey-work, but this will still be formalised such that it can be analysed and inferences drawn. There are a wide range of experimental and survey designs available, but what they all have in common is the aim to **separate the signal from the noise**. By "signal" we are talking about questions such as 'Does this antibiotic kill MRSA bacteria?" or "Does low-fertiliser input result in more insect species?" etc. In other words, the biological question that you really want to address and answer.
+
+Biological data are inherently noisy: if you repeat the same experiment twice you will obtain similar, but not identical results. Some biological systems, such as ecological ones, are noisier than laboratory ones, but even in the latter sample contamination, temperature variations etc. will result in slightly different results. All good experimental / survey designs have the aim of allowing you to work out where the noise in your system is coming from. If you can reduce, or understand, the noise you are more likely to be able to look at the signal which is what you are really interested in.
+
+## Cause and effect
+
+When you undertake an experiment or survey, you will often be interested in knowing what effect a particular treatment, management regime etc. has on an outcome. For example:
+
+-   Is bird Shannon diversity affected by willow coppice management?
+-   How long should people self-isolate for if tested positive for Covid19?
+-   Is % photosynthetic efficiency affected by iron availability in the soil?
+-   Is wheat yield increased by both Azole and SDHI fungicides at different doses?
+-   What dose of insecticide kills 50% of the aphids?
+
+For some of these questions it is easy to see how you might design an experiment or survey to answer your question, whereas for others it is harder. What they all haven in common is an underlying assumption about cause and effect, which are often referred to as **independent** and **dependent** variables, or **explanatory** and **response** variables. So for the above examples, we can view them as:
+
+| Response | Explanatory |
+|:-------------------------------:|:-------------------------------------:|
+| Bird diversity | Coppice management occurs (yes/no) |
+| Isolation time (days) | Covid test (positive / negative) |
+| Photosynthesis (%) | Fe concentration (mg/l) |
+| Wheat yield (t/ha) | Azole (none / low / high) and SDHI (none / low / high) |
+| Aphids (dead/alive) | Insecticide dose (mg/l) |
+
+In some of these examples your response (dependent) variable is continuous, with numbers that contain decimal points (bird diversity, wheat yield), in some the response is a whole number (3 days isolation, 7 days, 12 days etc.), and others a value between 0 and 100 (% peak photosynthesis). Likewise sometimes the explanatory (independent) variables have two categories (coppice, covid test), some multiple categories (Azole and SDHI) whilst others are continuous (Fe concentration). Three of the examples (bird, isolation and photosynthesis) only have one explanatory variable, whereas the fourth (wheat) has two explanatory variables. In the last example, the response variable is binary (dead or alive aphids).
+
+Irrespective of the exact type of data, all the above examples have the same pattern of:
+
+$$\text{Response variable = Explanatory variable(s)}$$ in other words we are trying to determine whether the explanatory variable(s) are or are not changing the response variable. However, we have already stated that biological data is noisy, and the noisier the data the harder it becomes to determine cause and effect. Therefore, we need to expand our previous equation to:
+
+$$\text{Response variable = Explanatory variable(s) + Noise}$$ We don't know what causes this noise, although we can often have a good guess. In this course we will consider simple experimental designs that help explain some of the noise, allowing you to focus more on what your explanatory variables are doing. This noise is more usually referred to as "Residual Error" or simply "Error" : this is not to imply that you have done something wrong, merely that we do not know where the variation has come from, and we need to account for it.
+
+The majority of the statistical models that we create in this course will have this syntax of a response variable and one or more explanatory variables, with residual error that is quantified. Formally, this can be written as:
+
+$$Y = X + \epsilon$$
+
+where
+
+-   $Y$ is your response variable
+-   $X$ is one or more explanatory variables
+-   $\epsilon$ is the Greek letter Epsilon, which by convention is used to represent the 'noise' or 'residual error' or 'variability' in your data.
+
+## Correlation does not indicate causation
+
+It is very easy to be seduced by statistics, and show a nice pattern between different variables that suggests something is happening when in reality it is not. For example, the number of diagnosed brain tumours in different States in the USA is strongly correlated with the number of mobile phone users in each State. Does that imply that you should throw your Android and iPhones in the bin? No. Think about it for a moment: what matters is the number of brain tumours per capita. Once you take the size of the population of each State into account the correlation disappears. No need to panic!
+
+This is a trivial example, but I include it simply to emphasise that you are first and foremost biologists. You must always ask whether the question you are asking makes biological sense, and not blindly accept some numbers generated by a computer.
+

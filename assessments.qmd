@@ -1,0 +1,7 @@
+# Assessments
+
+There will be two assessments, both delivered through Canvas, to test your skills and understanding. The format will be multiple choice and numeric answers (based on datasets for you to download and analyse)
+
+-   "formative" assessment, probably mid- to late-November. This does not count towards your mark for NES2303, but will give you practice in using the Canvas system for online assessments. Probably released in late November.
+-   "summative" assessment, worth 100% of the course marks. This can be completed in your own time, during the standard Semester One assessment period. Again, it is a Canvas-based test.
+

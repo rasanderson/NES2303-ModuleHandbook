@@ -1,0 +1,8 @@
+# Welcome {.unnumbered}
+
+This is the 2025-26 edition of the module handbook for NES2303 Experimental Design and Analysis. The handbook contains information about the module, including its aims, learning outcomes, assessment details, and schedule. You can access it via either the HTML or PDF format. If using the HTML format, you can navigate through the handbook using the sidebar on the left. The PDF version is available for download from Canvas.
+
+I recognise that as Biology or Zoology undergraduates, you may not have a strong background in statistics. Therefore, I have designed the module to be accessible to all students, regardless of their prior knowledge. The module will provide you with the necessary statistical skills to design and analyse experiments effectively. Each week you will be expected to undertake a small amount of reading, view a short video and use an interactive website to ensure you understand the concepts. The module will also include practical sessions where you will apply the statistical techniques learned in lectures to real data sets.
+
+## Pre-requisites
+Most of you will not have done A-levels or Scottish Highers in Mathematics or Statistics, and are probably uninterested in the subject! I've therefore designed the module to be accessible to all students, regardless of their prior knowledge. The module will provide you with the necessary statistical skills to design and analyse experiments effectively. The only key pre-requisite is that you know how to calculate an average (mean)!
