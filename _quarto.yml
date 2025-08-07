@@ -2,6 +2,12 @@ project:
   type: book
   output-dir: docs
 
+
+website:
+  title: "NES2303 Module Handbook"
+  site-url: https://rasanderson.github.io/NES2303-ModuleHandbook/
+
+
 book:
   title: "NES2303 Module Handbook"
   reader-mode: true
@@ -35,7 +41,6 @@ book:
     
 format:
   html:
-    output-dir: docs
     theme:
       - cosmo
       - custom.scss
