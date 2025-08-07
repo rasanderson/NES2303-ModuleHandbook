@@ -1,10 +1,7 @@
 function Span(el)
-  local content = pandoc.utils.stringify(el.content)
-
   if el.classes:includes("boxed") then
+    local content = pandoc.utils.stringify(el.content)
     return pandoc.RawInline("latex", "\\fcolorbox{gray}{white}{" .. content .. "}")
-  elseif el.classes:includes("bigger-boxed") then
-    return pandoc.RawInline("latex", "{\\large\\fcolorbox{gray}{white}{\\strut " .. content .. "}}")
   end
 end
 
@@ -22,7 +19,7 @@ end
 
 function Header(el)
   for i, item in ipairs(el.content) do
-    if item.t == "Span" and (item.classes:includes("boxed") or item.classes:includes("bigger-boxed")) then
+    if item.t == "Span" and item.classes:includes("boxed") then
       el.content[i] = Span(item)
     end
   end

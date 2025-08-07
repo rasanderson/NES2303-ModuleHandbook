@@ -23,12 +23,15 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - CourseHandbook.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
-
+    - biomod.qmd
+    - goals.qmd
+    - structure.qmd
+    - weekly.qmd
+    - assessments.qmd
+    - software.qmd
+    - stage3.qmd
+    - reports.qmd
+    
 format:
   html:
     theme:

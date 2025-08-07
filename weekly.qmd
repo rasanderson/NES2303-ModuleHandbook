@@ -1,0 +1,95 @@
+# Detailed structure of this course
+
+Materials are all provided on Canvas in the following sections (Canvas 'modules'). Each contains a set of presentations, interactive websites, a related practical, and five include an online Canvas test. You will not be able to access the practicals (or tests) until you have reviewed the interactive websites. The area on Canvas called "Timetable - a guide to managing your workload for NES2303" gives exact times, dates, venues for all activities.
+
+## Section Zero - Orientation practical
+
+This will simply be to help you setup R/RStudio on an NUIT PC, understand files, folders, filetypes, R packages etc.
+
+## Section One - Summarising and displaying data
+
+This will cover simple statistics, including measures of central tendency and variation in your data.
+
+-   Statistical power and hypothesis tests will be covered.
+-   How do you know if two treatments are different?
+-   How do you know if one variable is correlated with an other?
+-   What are p-values, what are their uses, and their abuses.
+-   What are effect sizes?
+
+This section will also provide guidance on good methods to visualise your data. Data visualisation is essential both prior to data analysis, as well as to communicate your results.
+
+### Interactive websites
+
+Introducing R and RStudio Data summaries and visualisation Understanding measures of central tendancy and variation
+
+### Practical
+
+Practice examples from interactive websites
+
+## Section Two - Linear models and ANOVA
+
+Learn about the concept of linear models, the R `lm` and `anova` functions, and how to interpret them. Understand the assumptions behind linear models, and look at examples where the explanatory variables are continuous or categorical.
+
+### Interactive websites
+
+Linear models with continuous explanatory variables Linear models with categorical explanatory variables
+
+### Practical
+
+Practice examples from interactive webistes
+
+## Section Three - Dealing with multiple explanatory variables
+
+This section explores situations where you might have multiple explanatory variables. These might not be independent in their effects, so we explore interactions between them, and how to understand them. We also consider ways in which you can improve your experimental design by blocking, and look at what to do if things go wrong and you lose some data. We also consider how ANOVA operates - what are the basic concepts of an ANOVA table, and how are we able to study treatment effects by looking at variances?
+
+### Interactive websites
+
+Multiple explanatory variables, interactions, blocks and missing data Understanding how sums of squares are used in linear models
+
+### Practical
+
+Practice examples from interactive webistes
+
+## Section Four - Generalised linear models
+
+The assumptions behind linear models, accessed through the `lm()` function in R, are breached when our response data consists of counts, proportions, or yes / no, true / false, dead / alive. We can extend linear models by generalising them using the `glm()` function. This sections shows you the two key statistical distributions relevant to these types of data, the Poisson and Binomial distributions, and how they relate the the traditional Gaussian (normal) distribution used in linear models.
+
+### Interactive website
+
+Generalised linear models
+
+### Practical
+
+Practice examples from interactive webistes
+
+## Section Five - Multiple response data; unconstrained ordination
+
+Sometimes you will not have a single response measurement, but might have 10, 20, 50, or hundreds. If you are dealing with genomic or bioinformatic data, you might have thousands of gene sequences that you want to understand. If you do surveys of plants, birds or insects you may have large numbers of species. It is not correct to do hundreds of separate (g)lms on these data, but multivariate techniques (MVT) provide an effective way to help you interpret them. In this section we introduce you to unconstrained ordination, which allows you to visualise relationships amongst your data. You can also make simple comparisons with potential explanatory variables.
+
+### Interactive website
+
+Unconstrained ordination
+
+### Practical
+
+Practice examples from interactive webistes
+
+## Section Six - Multiple response data; constrained ordination
+
+Here we demonstrate more advanced methods of using your explanatory data when you are working with multiple response variables. You will learn about permutation tests, which allow you to 'simulate' conventional ANOVA tests, such that you can infer the importance of your explanatory variables. We also discuss the best ways of visualising the results of these analyses. Advice from Roy Sanderson (SNES) advice on report-writing, planning research projects in Stage 3 etc.
+
+### Interactive website
+
+Constrained ordination
+
+### Practical
+
+Practice examples from interactive websites
+
+## Online Appendix on "Other Tests"
+
+Other tests, such as t.tests, paired t.tests, rank-based tests, Chi-squared tests. These all fit into the (generalised) linear model framework. Comparison of the standard (base) R commands and the equivalent via `lm()` or `glm()`
+
+### Interactive website
+
+Appendix - other tests

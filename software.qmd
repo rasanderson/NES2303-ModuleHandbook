@@ -1,0 +1,21 @@
+# Software required
+
+You will use free software called R/RStudio in this course. R was originally designed as a free version as a purely statistical commercial package (called S), and over the last 20 years has become the most popular analytical modelling software used by biologists in academia and industry. A huge number of free online training resources are available, and people have written what are known as 'packages' to provide extra functionality. These include data analysis in bioinformatics, ecology, zoology, animal tracking, genomics etc. We will make extensive use of two R packages: `mosaic` and `ggformula`. The `mosaic` package eases the transition for university students to use a code-based data science system like RStudio. `gg_formula` allows you to build complex graphs, using a series of simple commands.
+
+The R software, and `mosaic` and `ggformula` packages, are pre-installed on University NUIT cluster-rooms. They can also be used on your own PC or MacBook but due to technical differences between makes / models we will **not** provide you with any support with these.
+
+## Why R rather than Excel, Minitab or SPSS?
+
+Commercial packages such as Excel, Minitab and SPSS have a "shallow" initial learning curve, as they are based on familiar point-and-click menu-driven systems. R is much tougher initially, as you have to type in commands to, for example, calculage a mean or standard deviation, display a graph etc. However, R has several big advantages:
+
+-   you can save your set of commands in an ordinary text file. When you want to repeat or modify any analyses or graphs 6 months later, simply go back and make minor edits.
+
+-   Your analysis is therefore "reproducible".
+
+-   In Excel, Minitab etc. you need to remember exactly which check-box and menus to click: if you are like me you will have forgotten;
+
+-   even moderately complex analyses, including some that you will do in NES2303, are impossible in Excel etc;
+
+-   Government bodies (including NHS, Natural England), media organisations including [BBC](https://bbc.github.io/rcookbook/), Financial Times, The Guardian), Research Institutes (including Centre for Ecology and Hydrology, Francis Crick Institute), all universities (internationally and UK) use to analyse and visualise R
+
+-   **Increases your employability** It looks great on your CV after you graduate as it demonstrates you are also a data scientist!

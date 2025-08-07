@@ -1,0 +1,37 @@
+# Stage 3 Research Projects
+
+Many of the skills you learn in NES2303 will be essential for your Stage 3 research or literature review projects. This is not just your computer and analytical skills, but also *critical thinking* and *problem solving*. Indeed, a not uncommon conversation between academic staff and students when scoping their projects is along the lines of:
+
+> **Student**: I'd like to do a project on badgers / DNA / bacteria / phylogeny (*delete as applicable*)
+
+> **Staff**: What exactly do you want to find out about badgers / DNA / bacteria / phylogeny?
+
+> **Student**: I'm really interested in them!
+
+> **Staff**: But what is the research question?
+
+As you progress through the rest of Stage 2, and especially in Stage 3, you will find that you are designing more experiments and surveys yourself, rather than being given a laboratory manual or field guide to follow like a cookery recipe. This, of course, is what real scientific research is like: there isn't an absent-minded academic stood nearby to tell you exactly what to do. You need to be able to deconstruct what you plan to do, in order to create a sensible, practical experiment or survey, that provide data of sufficient quality for you to interpret.
+
+When Stage 3 students approach me wanting to do a research project under my supervision, a common starting point is them saying something along the lines of "I want to do a research project on butterflies", or "I'm interested in pollinator conservation", or "I want to follow a career in mammal conservation". These might be valid statements, but my immediate response is to ask "What is the question?", in other words, "What is it specifically that you want to determine?". So, taking those examples, it would be better to have something along the lines of:
+
+-   Are the numbers of butterflies higher in roadside verges where the vegetation is cut monthly compared to once per year?
+-   Do bumblebees occur more frequently near fields of mass-flowering crops such as oilseed rape?
+-   Is the frequency of small mammals detected in camera traps associated with supplementary feed for game birds?
+
+It is only when the students' initial statements are re-phrased into questions that we can start to sketch out possible routes by which you can develop formal scientific hypotheses to test with your statistical model, develop a sampling strategy, do the experiment / survey etc. Another common mistake is to **confuse aims and objectives**. The three bullet points above are still quite general, and might be considered as overall aims. Objectives are much more specific, and might encompass pilot studies to test methodology, or detailed studies of other variables. For example, in the butterfly study, two obvious objectives might be to see if the numbers of species of plants or the numbers of flowers $m^2$differed according to cutting regime.
+
+Therefore, when planning your research, a good strategy is to:
+
+-   Scope subject area, including literature review
+-   Define overall aim and the hypothesis / hypotheses you want to test
+-   Define specific objectives
+-   Pilot study (ideally) or use literature. This is useful to give you an understanding of the 'effect size' (more later) you are trying to detect, and thus the numbers or frequency of replicate samples that might be needed
+-   Design your experiment or survey.
+-   Undertake your experiment or survey, keeping careful laboratory or field records.
+-   Enter your data into a computer (often Excel, but if using maps specialist GIS software may be better).
+-   Import your data into R. If needed pre-process it to make it suitable for graphing or analysis. This **always** takes longer than you expect. Think your analyses **before** you data collection to minimise pre-processing
+-   Create summary tables, charts, figures. Get a broad understanding of your data.
+-   Statistical model of your data. Formal tests of hypotheses.
+-   Check assumptions of your model. All statistical models make certain assumptions about the input data which need to be checked;
+-   Interpret model; if necessary modify and re-run different models and compare them. Remember: **"All models are wrong, but some are useful!"**
+-   Write up your report (see tips below)

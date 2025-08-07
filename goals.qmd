@@ -1,0 +1,18 @@
+# Defining goals
+
+One approach we will try and use as much as possible is to think in terms of the **goal** that you are trying to score. By a goal, we could be referring to a particular graph or plot to visualise your data, a way of tabulating a summary of your data, or undertaking a statistical model. Broadly, your thinking can be along the lines of:
+
+ 
+
+::: center
+[**goal**]{.boxed} **( [y]{.boxed} \~ [x]{.boxed}, data = [mydata]{.boxed}, ... )**
+:::
+
+ 
+
+Let's decode this little diagram:
+
+-   **goal** This can be a plot, such as a barchart, scatterplot, boxplot etc. It could be a statistical test, it might be a simple summary statistic, for example an average (`mean`), or standard deviation (`sd`), or it might be a statistical model, such as a linear model (`lm`) or generalised linear model (`glm`). All these will be introduced to you during the course.
+-   **y \~ x** This represents the $Y = X$ in the equation earlier. For some graphs or simple statistics you might only need the $Y$ component. For example, if you the average overall bird diversity across all your sites, you would just provide the $Y$ data of bird diversity at each wood. If you want the average broken down for both coppiced and uncoppiced woodlands, you would provide both the $Y$ and $X$ data. Note that you do not actually need to put $+ \epsilon$ as this is calculated for you where needed.
+-   **data = mydata** Obviously you will be working with data. Often you need to *pre-process* your data before you can achieve your goal, and we will teach you simple tricks to do this.
+-   **...** This represents additional options. For graphs, you might want to change colours, titles etc. In statistical models, some assumptions may need to be changed when you work with deal with count data (e.g. days after Covid19), bounded data (e.g. % photosynthesis efficiency), or presence / absence data (e.g. dead or alive aphids).

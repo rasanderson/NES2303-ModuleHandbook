@@ -19,6 +19,37 @@ span.invboxed {
   color: white;
 }
 
+span.bigger-boxed {
+  border: 5px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 2em;
+  font-weight: bold;
+}
+span.bigger-invboxed {
+  border: 5px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+span.smaller-boxed {
+  border: 5px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 0.5em;
+ }
+span.smaller-invboxed {
+  border: 5px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.5em;
+ }
+
+
 table, td, th {
   border: 0px;
 }
