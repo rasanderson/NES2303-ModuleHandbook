@@ -54,7 +54,7 @@ rsconnect/
 .Rproj.user
 .Rhistory
 *_cache
-*_files
+_files
 _main.rds
 _book
 *.md
@@ -66,7 +66,7 @@ libs
 *.rds
 _main.*
 tmp-pdfcrop-*
-figures
+# figures
 /.quarto/
 
 /.luarc.json
