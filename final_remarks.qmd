@@ -1,0 +1,11 @@
+# Final remarks: how to do well
+
+## Getting the most out of this module
+First, don't be afraid of the data, basic statistics or R code. You'll learn some really useful critical thinking and transferable skills, but the module is designed to allow you to go at your own pace. Do not panic if you don't understand everything at first, as the module has a steep learning curve. There is plenty of demonstrator support. Based on previous years, I'd also add:
+
+* **Don't copy and paste** It's very tempting to copy and paste R code from my instructions into your workspace to complete the practicals quickly. You'll finish the 2 hour practical session quickly, but will learn less. So I've been really nasty and have included some deliberate typos in the code in later practicals in the module to reduce the temptation to do this!
+* **Prepare for the practicals** The practicals are designed to be completed in 2 hours, but you will need to prepare for them. This means watching the "Ten Minute Videos" (TMV) associated with each practical beforehand. These videos are designed to be user-friendly and accessible
+* **Use the interactive websites** Some concepts are difficult to show in a PowerPoint or static screen, so the interactive websites for each website will help you with this. Please ask if you still have problems. The interactive websites also contain quizzes to allow you to test your understanding as you progress.
+
+## Provide feedback
+This module has only been running for 3 years and I update it every year on the basis of your feedback. You can email me directly with comments to [roy.sanderson@newcastle.ac.uk](mailto:roy.sanderson@newcastle.ac.uk) or you can contact your student rep, whose name is on your University app. Please **do not** wait until the end of the module to provide feedback, as it will be too late for me to correct problems. Let me know of issues as soon as possible and I will do my best to resolve them.

@@ -32,12 +32,14 @@ book:
     - intro.qmd
     - biomod.qmd
     - goals.qmd
+    - signal_noise.qmd
     - structure.qmd
     - weekly.qmd
     - assessments.qmd
     - software.qmd
     - stage3.qmd
     - reports.qmd
+    - final_remarks.qmd
     
 format:
   html:

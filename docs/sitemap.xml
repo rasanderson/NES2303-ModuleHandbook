@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ncl.instructure.com/courses/67972/index.html</loc>
-    <lastmod>2025-08-07T16:48:22.571Z</lastmod>
+    <lastmod>2025-08-11T09:41:45.992Z</lastmod>
   </url>
   <url>
     <loc>https://ncl.instructure.com/courses/67972/intro.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://ncl.instructure.com/courses/67972/biomod.html</loc>
-    <lastmod>2025-08-07T16:33:07.812Z</lastmod>
+    <lastmod>2025-08-11T09:58:42.647Z</lastmod>
   </url>
   <url>
     <loc>https://ncl.instructure.com/courses/67972/goals.html</loc>
@@ -43,5 +43,13 @@
   <url>
     <loc>https://ncl.instructure.com/courses/67972/NES2303-Module-Handbook.pdf</loc>
     <lastmod>2025-08-07T17:13:13.760Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ncl.instructure.com/courses/67972/signal_noise.html</loc>
+    <lastmod>2025-08-11T11:46:35.652Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ncl.instructure.com/courses/67972/final_remarks.html</loc>
+    <lastmod>2025-08-11T11:53:52.999Z</lastmod>
   </url>
 </urlset>

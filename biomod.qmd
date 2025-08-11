@@ -14,9 +14,9 @@ When you undertake an experiment or survey, you will often be interested in know
 -   Is wheat yield increased by both Azole and SDHI fungicides at different doses?
 -   What dose of insecticide kills 50% of the aphids?
 
-For some of these questions it is easy to see how you might design an experiment or survey to answer your question, whereas for others it is harder. What they all haven in common is an underlying assumption about cause and effect, which are often referred to as **independent** and **dependent** variables, or **explanatory** and **response** variables. So for the above examples, we can view them as:
+For some of these questions it is easy to see how you might design an experiment or survey to answer your question, whereas for others it is harder. What they all haven in common is an underlying assumption about **cause** and **effect**, which are often referred to as **independent** and **dependent** variables, or **explanatory** and **response** variables. So for the above examples, we can view them as:
 
-| Response | Explanatory |
+| Response (effect) | Explanatory (cause) |
 |:-------------------------------:|:-------------------------------------:|
 | Bird diversity | Coppice management occurs (yes/no) |
 | Isolation time (days) | Covid test (positive / negative) |
@@ -28,9 +28,17 @@ In some of these examples your response (dependent) variable is continuous, with
 
 Irrespective of the exact type of data, all the above examples have the same pattern of:
 
-$$\text{Response variable = Explanatory variable(s)}$$ in other words we are trying to determine whether the explanatory variable(s) are or are not changing the response variable. However, we have already stated that biological data is noisy, and the noisier the data the harder it becomes to determine cause and effect. Therefore, we need to expand our previous equation to:
+::: center
+**[Response variable]{.boxed} \= [Explanatory variable(s)]{.boxed}**
+:::
 
-$$\text{Response variable = Explanatory variable(s) + Noise}$$ We don't know what causes this noise, although we can often have a good guess. In this course we will consider simple experimental designs that help explain some of the noise, allowing you to focus more on what your explanatory variables are doing. This noise is more usually referred to as "Residual Error" or simply "Error" : this is not to imply that you have done something wrong, merely that we do not know where the variation has come from, and we need to account for it.
+in other words we are trying to determine whether the explanatory variable(s) are or are not changing the response variable. However, we have already stated that biological data is noisy, and the noisier the data the harder it becomes to determine cause and effect. Therefore, we need to expand our previous equation to:
+
+::: center
+**[Response variable]{.boxed} \= [Explanatory variable(s)]{.boxed} + [Noise]{.boxed}**
+:::
+
+We don't know what causes this noise, although we can often have a good guess. In this course we will consider simple experimental designs that help explain some of the noise, allowing you to focus more on what your explanatory variables are doing. This noise is more usually referred to as "Residual Error" or simply "Error" : this is not to imply that you have done something wrong, merely that we do not know where the variation has come from, and we need to account for it.
 
 The majority of the statistical models that we create in this course will have this syntax of a response variable and one or more explanatory variables, with residual error that is quantified. Formally, this can be written as:
 

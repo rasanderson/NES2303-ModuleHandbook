@@ -1,0 +1,68 @@
+# Signal and noise
+
+## Why do I need to know this?
+One student last year asked me "Why do I need to know this?" during one of the practicals. Basically, the student didn't see any reason why data analysis was needed to show whether a laboratory treatment was having an effect on the results. The same question could be raised about a field survey of birds or mammals, and it is a fair question to ask.
+
+## Visualise the data
+My advice for a good starting point is not to begin with data analysis, and instead to visualise your results: this gives you a good initial understanding of what's happening. Here are two possible scenarios, given that both Biology and Zoology students do the module, and some of you will be focussed on laboratory experiments, and others amongst you field-based studies:
+
+* **Laboratory example** You've just done a laboratory experiment into cell growth for a bioreactor. Your response is methane production and you have one explanatory variable with two 'levels', a conventional feedstock (control), and a new bioreactor feedstock;
+* **Field example** You've just done a field survey of birds. Your response is the number of birds seen in a given area, and you have one explanatory variable with two 'levels', a conventional habitat management (control), and a new wildflower management technique.
+
+For both examples you can visualise the data using a "boxplot" which shows the median, interquartile range, and outliers. The boxplot is a good way to visualise the data because it shows the distribution of the data, and allows you to see if there are any outliers. In the boxplot below the horizontal (x) axis shows the explanatory variable (bioreactor feedstock or field management), and the vertical (y) axis shows the response variable (methane production or number of birds seen).
+
+```{r, echo = FALSE, fig.cap = "Boxplot of lab experiment or field survey", fig.align = "center"}
+# ggplot2 boxplot based on 20 randomly generated data points (40 in total)
+# x axis labelled "Bioreactor feedstock or field management"
+# y axis labelled "Methane production or number of birds seen"
+# Control group should be on the left, new treatment on the right
+# Control values should be lower than new treatment values
+library(ggplot2)
+set.seed(123)  # For reproducibility
+data <- data.frame(
+  feedstock = rep(c("Control", "New Treatment"), each = 20),
+  production = c(rnorm(20, mean = 150, sd = 10), rnorm(20, mean = 170, sd = 10))
+)
+ggplot(data, aes(x = feedstock, y = production)) +
+  geom_boxplot() +
+  labs(x = "Bioreactor feedstock or field management",
+       y = "Methane production or number of birds seen") +
+  theme_classic()
+```
+Well that looks fairly obvious: your new bioreactor feedstock or wildflower field management treatment is having the positive effect you hoped for. Yes, there is a bit of noise in the data, but the differences are still clear. The median, shown by the horizontal line in each box, is roughly 150 for the control, and roughly 170 for your new treatment. You can think of this example as:
+
+::: center
+[Methane or birds]{.bigger-boxed} \= [Feedstock or field management]{.boxed} + [noise]{.boxed}
+:::
+
+So whilst there is **noise** in your system, the **signal** (methane or birds) is much more important, as shown by the bigger box, it is still obvious what is going on. Thus, when measuring the **signal to noise ratio** the signal is much bigger than the noise.
+
+## Noisier data
+But what if you had obtained a graph like this?
+
+```{r, echo = FALSE, fig.cap = "Boxplot of lab experiment or field survey with more noise", fig.align = "center"}
+# ggplot2 boxplot based on 20 randomly generated data points (40 in total)
+# x axis labelled "Bioreactor feedstock or field management"
+# y axis labelled "Methane production or number of birds seen"
+# Control group should be on the left, new treatment on the right
+# Control values should be lower than new treatment values
+set.seed(3456)  # For reproducibility
+data <- data.frame(
+  feedstock = rep(c("Control", "New Treatment"), each = 20),
+  production = c(rnorm(20, mean = 150, sd = 80), rnorm(20, mean = 170, sd = 80))
+)
+ggplot(data, aes(x = feedstock, y = production)) +
+  geom_boxplot() +
+  labs(x = "Bioreactor feedstock or field management",
+       y = "Methane production or number of birds seen") +
+  theme_classic()
+```
+So whilst the new treatment is still having having a similar effect, with the control at about 150, and the new treatment around 170, the noise is much bigger, as shown by the much bigger boxes and whiskers. Indeed, on the first graph the vertical axis only goes from 130 to 180, whereas here it goes from 0 to 300 given how much noisier the data is. You can think of this as:
+
+::: center
+[Methane or birds]{.bigger-boxed} \= [Feedstock or field management]{.boxed} + [noise]{.bigger-boxed}
+:::
+
+Whilst the **signal** (methane or birds) still has a big box, the **noise** has become much worse, making it harder to understand. Thus, whilst a visual assessment of your data is useful when you have clear differences, you need more powerful methods when the data are noisy. These formal methods of data analysis are what you'll learn in this module, and they'll allow you to determine whether the differences you see in your data are statistically significant, or whether they could have occurred by chance. Most of these methods work by assessing the **signal to noise ratio** in your data, to help you decide if the differences are real.
+
+I've used an example here with a categorical explanatory variable (feedstock or field management), but the same principles apply to continuous explanatory variables, such as temperature or time. The key point is that you need to assess the signal to noise ratio in your data to determine whether the differences you see are real or just due to random variation.

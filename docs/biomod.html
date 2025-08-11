@@ -253,7 +253,7 @@ window.Quarto = {
 <li>Is wheat yield increased by both Azole and SDHI fungicides at different doses?</li>
 <li>What dose of insecticide kills 50% of the aphids?</li>
 </ul>
-<p>For some of these questions it is easy to see how you might design an experiment or survey to answer your question, whereas for others it is harder. What they all haven in common is an underlying assumption about cause and effect, which are often referred to as <strong>independent</strong> and <strong>dependent</strong> variables, or <strong>explanatory</strong> and <strong>response</strong> variables. So for the above examples, we can view them as:</p>
+<p>For some of these questions it is easy to see how you might design an experiment or survey to answer your question, whereas for others it is harder. What they all haven in common is an underlying assumption about <strong>cause</strong> and <strong>effect</strong>, which are often referred to as <strong>independent</strong> and <strong>dependent</strong> variables, or <strong>explanatory</strong> and <strong>response</strong> variables. So for the above examples, we can view them as:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 45%">
@@ -261,8 +261,8 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Response</th>
-<th style="text-align: center;">Explanatory</th>
+<th style="text-align: center;">Response (effect)</th>
+<th style="text-align: center;">Explanatory (cause)</th>
 </tr>
 </thead>
 <tbody>
@@ -290,8 +290,14 @@ window.Quarto = {
 </table>
 <p>In some of these examples your response (dependent) variable is continuous, with numbers that contain decimal points (bird diversity, wheat yield), in some the response is a whole number (3 days isolation, 7 days, 12 days etc.), and others a value between 0 and 100 (% peak photosynthesis). Likewise sometimes the explanatory (independent) variables have two categories (coppice, covid test), some multiple categories (Azole and SDHI) whilst others are continuous (Fe concentration). Three of the examples (bird, isolation and photosynthesis) only have one explanatory variable, whereas the fourth (wheat) has two explanatory variables. In the last example, the response variable is binary (dead or alive aphids).</p>
 <p>Irrespective of the exact type of data, all the above examples have the same pattern of:</p>
-<p><span class="math display">\[\text{Response variable = Explanatory variable(s)}\]</span> in other words we are trying to determine whether the explanatory variable(s) are or are not changing the response variable. However, we have already stated that biological data is noisy, and the noisier the data the harder it becomes to determine cause and effect. Therefore, we need to expand our previous equation to:</p>
-<p><span class="math display">\[\text{Response variable = Explanatory variable(s) + Noise}\]</span> We don’t know what causes this noise, although we can often have a good guess. In this course we will consider simple experimental designs that help explain some of the noise, allowing you to focus more on what your explanatory variables are doing. This noise is more usually referred to as “Residual Error” or simply “Error” : this is not to imply that you have done something wrong, merely that we do not know where the variation has come from, and we need to account for it.</p>
+<div class="center">
+<p><strong><span class="boxed">Response variable</span> = <span class="boxed">Explanatory variable(s)</span></strong></p>
+</div>
+<p>in other words we are trying to determine whether the explanatory variable(s) are or are not changing the response variable. However, we have already stated that biological data is noisy, and the noisier the data the harder it becomes to determine cause and effect. Therefore, we need to expand our previous equation to:</p>
+<div class="center">
+<p><strong><span class="boxed">Response variable</span> = <span class="boxed">Explanatory variable(s)</span> + <span class="boxed">Noise</span></strong></p>
+</div>
+<p>We don’t know what causes this noise, although we can often have a good guess. In this course we will consider simple experimental designs that help explain some of the noise, allowing you to focus more on what your explanatory variables are doing. This noise is more usually referred to as “Residual Error” or simply “Error” : this is not to imply that you have done something wrong, merely that we do not know where the variation has come from, and we need to account for it.</p>
 <p>The majority of the statistical models that we create in this course will have this syntax of a response variable and one or more explanatory variables, with residual error that is quantified. Formally, this can be written as:</p>
 <p><span class="math display">\[Y = X + \epsilon\]</span></p>
 <p>where</p>

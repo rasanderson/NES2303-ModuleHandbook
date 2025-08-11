@@ -68,3 +68,5 @@ _main.*
 tmp-pdfcrop-*
 figures
 /.quarto/
+
+/.luarc.json
