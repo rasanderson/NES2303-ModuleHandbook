@@ -18,8 +18,8 @@ book:
     right: |
       This module handbook was built with <a href="https://quarto.org/">Quarto</a>.
 
-  cover-image: cover.jpg
-  favicon: cover.jpg
+  cover-image: cover.png
+  favicon: cover.png
   site-url: https://ncl.instructure.com/courses/67972
   repo-url: https://github.com/rasanderson/NES2303-ModuleHandbook
   repo-branch: main

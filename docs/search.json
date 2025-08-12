@@ -34,7 +34,7 @@
     "href": "biomod.html",
     "title": "2  Introduction to Biostatistical Modelling",
     "section": "",
-    "text": "2.1 Cause and effect\nTo some extent the above heading would be a better title for this course than “Experimental Design and Statistics”. Some of you, especially those focussed on cell and molecular biology and / or working in the laboratories are likely to be conducting formal experiments. Others, especially those collecting ecological / environmental data, might be undertaking more survey-work, but this will still be formalised such that it can be analysed and inferences drawn. There are a wide range of experimental and survey designs available, but what they all have in common is the aim to separate the signal from the noise. By “signal” we are talking about questions such as ’Does this antibiotic kill MRSA bacteria?” or “Does low-fertiliser input result in more insect species?” etc. In other words, the biological question that you really want to address and answer.\nBiological data are inherently noisy: if you repeat the same experiment twice you will obtain similar, but not identical results. Some biological systems, such as ecological ones, are noisier than laboratory ones, but even in the latter sample contamination, temperature variations etc. will result in slightly different results. All good experimental / survey designs have the aim of allowing you to work out where the noise in your system is coming from. If you can reduce, or understand, the noise you are more likely to be able to look at the signal which is what you are really interested in.\nWhen you undertake an experiment or survey, you will often be interested in knowing what effect a particular treatment, management regime etc. has on an outcome. For example:\nFor some of these questions it is easy to see how you might design an experiment or survey to answer your question, whereas for others it is harder. What they all haven in common is an underlying assumption about cause and effect, which are often referred to as independent and dependent variables, or explanatory and response variables. So for the above examples, we can view them as:\nIn some of these examples your response (dependent) variable is continuous, with numbers that contain decimal points (bird diversity, wheat yield), in some the response is a whole number (3 days isolation, 7 days, 12 days etc.), and others a value between 0 and 100 (% peak photosynthesis). Likewise sometimes the explanatory (independent) variables have two categories (coppice, covid test), some multiple categories (Azole and SDHI) whilst others are continuous (Fe concentration). Three of the examples (bird, isolation and photosynthesis) only have one explanatory variable, whereas the fourth (wheat) has two explanatory variables. In the last example, the response variable is binary (dead or alive aphids).\nIrrespective of the exact type of data, all the above examples have the same pattern of:\nin other words we are trying to determine whether the explanatory variable(s) are or are not changing the response variable. However, we have already stated that biological data is noisy, and the noisier the data the harder it becomes to determine cause and effect. Therefore, we need to expand our previous equation to:\nWe don’t know what causes this noise, although we can often have a good guess. In this course we will consider simple experimental designs that help explain some of the noise, allowing you to focus more on what your explanatory variables are doing. This noise is more usually referred to as “Residual Error” or simply “Error” : this is not to imply that you have done something wrong, merely that we do not know where the variation has come from, and we need to account for it.\nThe majority of the statistical models that we create in this course will have this syntax of a response variable and one or more explanatory variables, with residual error that is quantified. Formally, this can be written as:\n\\[Y = X + \\epsilon\\]\nwhere",
+    "text": "2.1 Cause and effect\nWhen you undertake an experiment or survey, you will often be interested in knowing what effect a particular treatment, management regime etc. has on an outcome. For example:\nFor some of these questions it is easy to see how you might design an experiment or survey to answer your question, whereas for others it is harder. What they all haven in common is an underlying assumption about cause and effect, which are often referred to as independent and dependent variables, or explanatory and response variables. So for the above examples, we can view them as:\nIn some of these examples your response (dependent) variable is continuous, with numbers that contain decimal points (bird diversity, wheat yield), in some the response is a whole number (3 days isolation, 7 days, 12 days etc.), and others a value between 0 and 100 (% peak photosynthesis). Likewise sometimes the explanatory (independent) variables have two categories (coppice, covid test), some multiple categories (Azole and SDHI) whilst others are continuous (Fe concentration). Three of the examples (bird, isolation and photosynthesis) only have one explanatory variable, whereas the fourth (wheat) has two explanatory variables. In the last example, the response variable is binary (dead or alive aphids).\nIrrespective of the exact type of data, all the above examples have the same pattern of:\nin other words we are trying to determine whether the explanatory variable(s) are or are not changing the response variable. However, we have already stated that biological data is noisy, and the noisier the data the harder it becomes to determine cause and effect. Therefore, we need to expand our previous equation to:\nWe don’t know what causes this noise, although we can often have a good guess. In this course we will consider simple experimental designs that help explain some of the noise, allowing you to focus more on what your explanatory variables are doing. This noise is more usually referred to as “Residual Error” or simply “Error” : this is not to imply that you have done something wrong, merely that we do not know where the variation has come from, and we need to account for it.\nThe majority of the statistical models that we create in this course will have this syntax of a response variable and one or more explanatory variables, with residual error that is quantified. Formally, this can be written as:\n\\[Y = X + \\epsilon\\]\nwhere",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Biostatistical Modelling</span>"
     ]
@@ -70,196 +70,6 @@
     ]
   },
   {
-    "objectID": "structure.html",
-    "href": "structure.html",
-    "title": "4  NES2303 Course structure",
-    "section": "",
-    "text": "4.1 Lecture structure\nThere will be a couple of introductory lectures from Roy Sanderson at the start of the course, but the focus will be on practical sessions. If for health or other reasons you are not able to attend the computer classes on Campus, then you should still be able to complete the course without problems. We will use Microsoft Teams to answer questions, as students can help each other more easily, and staff or demonstrators can respond more quickly.\nThe following diagram summarises the overall course structure\nTeaching staff and many demonstrators will be from the Modelling Evidence and Policy Research Group (MEP) https://www.ncl.ac.uk/nes/our-research/biology/modelling-evidence-policy/ within SNES. The group includes Biologists and Zoologists working in many different fields, from microbiology through to field zoology, but all these areas require solid data analysis and interpretation. The formative and summative tests will be hosted on the Canvas Virtual Learning Environment, but will require you to analyse and interpret data separately. The tests will take the form of short-answer / multiple choice / numeric answers.\nAn Introductory lecture from Roy Sanderson (Module Leader) in Week 4, ‘quantitative foundations’ lecture in Week 5, and a final informal Question and Answer session in Week 14 to answer any outstanding queries on your understanding of course content, and help you prepare for the Summative Assessment in January.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NES2303 Course structure</span>"
-    ]
-  },
-  {
-    "objectID": "structure.html#interactive-websites",
-    "href": "structure.html#interactive-websites",
-    "title": "4  NES2303 Course structure",
-    "section": "4.2 Interactive websites",
-    "text": "4.2 Interactive websites\nWe have created interactive websites for this course, for you to learn and practice ideas before and after the practicals. These websites include simple quizzes to test your understanding. In the practicals you will be able to explore the example data shown on the websites in more depth, and hone your skills using new data. If you study the interactive websites before attending the relevant practical, you will find the latter much simpler, and gain more from it.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NES2303 Course structure</span>"
-    ]
-  },
-  {
-    "objectID": "structure.html#computer-classes",
-    "href": "structure.html#computer-classes",
-    "title": "4  NES2303 Course structure",
-    "section": "4.3 Computer classes",
-    "text": "4.3 Computer classes\nThese are scheduled for seven weeks (Week 4 to Week 11 - Week 10 is ‘Enrichment Week’ with no teaching) in the main Herschel Building cluster room (Fell) on the first floor.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NES2303 Course structure</span>"
-    ]
-  },
-  {
-    "objectID": "structure.html#ten-minute-videos-tmv",
-    "href": "structure.html#ten-minute-videos-tmv",
-    "title": "4  NES2303 Course structure",
-    "section": "4.4 Ten-minute videos (TMV)",
-    "text": "4.4 Ten-minute videos (TMV)\nI have prepared a series of short (5 to 10 minutes) animated videos to explain in simple, non-technical terms some quantitative biology concepts. These have been gradually introduced to the course over the last 2 years, and students have found them helpful. They deliberately avoid complex maths, and build up key concepts sequentially to aid your understanding.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NES2303 Course structure</span>"
-    ]
-  },
-  {
-    "objectID": "structure.html#cheatsheet",
-    "href": "structure.html#cheatsheet",
-    "title": "4  NES2303 Course structure",
-    "section": "4.5 Cheatsheet",
-    "text": "4.5 Cheatsheet\nThere is a lot of new information to absorb in this module so I’ve prepared a 2-page quick-reference “cheatsheet” with the main statistical analyses. This will probably be incomprehensible to you at the start of this course (don’t panic!), but should soon be a valuable resource to help you as you progress and develop your understanding.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NES2303 Course structure</span>"
-    ]
-  },
-  {
-    "objectID": "structure.html#managing-your-workload",
-    "href": "structure.html#managing-your-workload",
-    "title": "4  NES2303 Course structure",
-    "section": "4.6 Managing your workload",
-    "text": "4.6 Managing your workload\nThis is a 10-credit module so assumes you will devote 100 hours of study time. There are 7 practicals and two lectures, so you would theoretically do 86 hours of self-directed study. In practice, you won’t need 86 hours (phew!) but please do make use of the extensive online resources on Canvas, especially the Ten-Minute Videos and Interactive Websites. I have provided a page on Canvas to help you plan and manage the workload for NES2303, with a week-by-week diary throughout Semester One.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NES2303 Course structure</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html",
-    "href": "weekly.html",
-    "title": "5  Detailed structure of this course",
-    "section": "",
-    "text": "5.1 Section Zero - Orientation practical\nMaterials are all provided on Canvas in the following sections (Canvas ‘modules’). Each contains a set of presentations, interactive websites, a related practical, and five include an online Canvas test. You will not be able to access the practicals (or tests) until you have reviewed the interactive websites. The area on Canvas called “Timetable - a guide to managing your workload for NES2303” gives exact times, dates, venues for all activities.\nThis will simply be to help you setup R/RStudio on an NUIT PC, understand files, folders, filetypes, R packages etc.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html#section-one---summarising-and-displaying-data",
-    "href": "weekly.html#section-one---summarising-and-displaying-data",
-    "title": "5  Detailed structure of this course",
-    "section": "5.2 Section One - Summarising and displaying data",
-    "text": "5.2 Section One - Summarising and displaying data\nThis will cover simple statistics, including measures of central tendency and variation in your data.\n\nStatistical power and hypothesis tests will be covered.\nHow do you know if two treatments are different?\nHow do you know if one variable is correlated with an other?\nWhat are p-values, what are their uses, and their abuses.\nWhat are effect sizes?\n\nThis section will also provide guidance on good methods to visualise your data. Data visualisation is essential both prior to data analysis, as well as to communicate your results.\n\n5.2.1 Interactive websites\nIntroducing R and RStudio Data summaries and visualisation Understanding measures of central tendancy and variation\n\n\n5.2.2 Practical\nPractice examples from interactive websites",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html#section-two---linear-models-and-anova",
-    "href": "weekly.html#section-two---linear-models-and-anova",
-    "title": "5  Detailed structure of this course",
-    "section": "5.3 Section Two - Linear models and ANOVA",
-    "text": "5.3 Section Two - Linear models and ANOVA\nLearn about the concept of linear models, the R lm and anova functions, and how to interpret them. Understand the assumptions behind linear models, and look at examples where the explanatory variables are continuous or categorical.\n\n5.3.1 Interactive websites\nLinear models with continuous explanatory variables Linear models with categorical explanatory variables\n\n\n5.3.2 Practical\nPractice examples from interactive webistes",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html#section-three---dealing-with-multiple-explanatory-variables",
-    "href": "weekly.html#section-three---dealing-with-multiple-explanatory-variables",
-    "title": "5  Detailed structure of this course",
-    "section": "5.4 Section Three - Dealing with multiple explanatory variables",
-    "text": "5.4 Section Three - Dealing with multiple explanatory variables\nThis section explores situations where you might have multiple explanatory variables. These might not be independent in their effects, so we explore interactions between them, and how to understand them. We also consider ways in which you can improve your experimental design by blocking, and look at what to do if things go wrong and you lose some data. We also consider how ANOVA operates - what are the basic concepts of an ANOVA table, and how are we able to study treatment effects by looking at variances?\n\n5.4.1 Interactive websites\nMultiple explanatory variables, interactions, blocks and missing data Understanding how sums of squares are used in linear models\n\n\n5.4.2 Practical\nPractice examples from interactive webistes",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html#section-four---generalised-linear-models",
-    "href": "weekly.html#section-four---generalised-linear-models",
-    "title": "5  Detailed structure of this course",
-    "section": "5.5 Section Four - Generalised linear models",
-    "text": "5.5 Section Four - Generalised linear models\nThe assumptions behind linear models, accessed through the lm() function in R, are breached when our response data consists of counts, proportions, or yes / no, true / false, dead / alive. We can extend linear models by generalising them using the glm() function. This sections shows you the two key statistical distributions relevant to these types of data, the Poisson and Binomial distributions, and how they relate the the traditional Gaussian (normal) distribution used in linear models.\n\n5.5.1 Interactive website\nGeneralised linear models\n\n\n5.5.2 Practical\nPractice examples from interactive webistes",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html#section-five---multiple-response-data-unconstrained-ordination",
-    "href": "weekly.html#section-five---multiple-response-data-unconstrained-ordination",
-    "title": "5  Detailed structure of this course",
-    "section": "5.6 Section Five - Multiple response data; unconstrained ordination",
-    "text": "5.6 Section Five - Multiple response data; unconstrained ordination\nSometimes you will not have a single response measurement, but might have 10, 20, 50, or hundreds. If you are dealing with genomic or bioinformatic data, you might have thousands of gene sequences that you want to understand. If you do surveys of plants, birds or insects you may have large numbers of species. It is not correct to do hundreds of separate (g)lms on these data, but multivariate techniques (MVT) provide an effective way to help you interpret them. In this section we introduce you to unconstrained ordination, which allows you to visualise relationships amongst your data. You can also make simple comparisons with potential explanatory variables.\n\n5.6.1 Interactive website\nUnconstrained ordination\n\n\n5.6.2 Practical\nPractice examples from interactive webistes",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html#section-six---multiple-response-data-constrained-ordination",
-    "href": "weekly.html#section-six---multiple-response-data-constrained-ordination",
-    "title": "5  Detailed structure of this course",
-    "section": "5.7 Section Six - Multiple response data; constrained ordination",
-    "text": "5.7 Section Six - Multiple response data; constrained ordination\nHere we demonstrate more advanced methods of using your explanatory data when you are working with multiple response variables. You will learn about permutation tests, which allow you to ‘simulate’ conventional ANOVA tests, such that you can infer the importance of your explanatory variables. We also discuss the best ways of visualising the results of these analyses. Advice from Roy Sanderson (SNES) advice on report-writing, planning research projects in Stage 3 etc.\n\n5.7.1 Interactive website\nConstrained ordination\n\n\n5.7.2 Practical\nPractice examples from interactive websites",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "weekly.html#online-appendix-on-other-tests",
-    "href": "weekly.html#online-appendix-on-other-tests",
-    "title": "5  Detailed structure of this course",
-    "section": "5.8 Online Appendix on “Other Tests”",
-    "text": "5.8 Online Appendix on “Other Tests”\nOther tests, such as t.tests, paired t.tests, rank-based tests, Chi-squared tests. These all fit into the (generalised) linear model framework. Comparison of the standard (base) R commands and the equivalent via lm() or glm()\n\n5.8.1 Interactive website\nAppendix - other tests",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Detailed structure of this course</span>"
-    ]
-  },
-  {
-    "objectID": "assessments.html",
-    "href": "assessments.html",
-    "title": "6  Assessments",
-    "section": "",
-    "text": "There will be two assessments, both delivered through Canvas, to test your skills and understanding. The format will be multiple choice and numeric answers (based on datasets for you to download and analyse)\n\n“formative” assessment, probably mid- to late-November. This does not count towards your mark for NES2303, but will give you practice in using the Canvas system for online assessments. Probably released in late November.\n“summative” assessment, worth 100% of the course marks. This can be completed in your own time, during the standard Semester One assessment period. Again, it is a Canvas-based test.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Assessments</span>"
-    ]
-  },
-  {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "7  Software required",
-    "section": "",
-    "text": "7.1 Why R rather than Excel, Minitab or SPSS?\nYou will use free software called R/RStudio in this course. R was originally designed as a free version as a purely statistical commercial package (called S), and over the last 20 years has become the most popular analytical modelling software used by biologists in academia and industry. A huge number of free online training resources are available, and people have written what are known as ‘packages’ to provide extra functionality. These include data analysis in bioinformatics, ecology, zoology, animal tracking, genomics etc. We will make extensive use of two R packages: mosaic and ggformula. The mosaic package eases the transition for university students to use a code-based data science system like RStudio. gg_formula allows you to build complex graphs, using a series of simple commands.\nThe R software, and mosaic and ggformula packages, are pre-installed on University NUIT cluster-rooms. They can also be used on your own PC or MacBook but due to technical differences between makes / models we will not provide you with any support with these.\nCommercial packages such as Excel, Minitab and SPSS have a “shallow” initial learning curve, as they are based on familiar point-and-click menu-driven systems. R is much tougher initially, as you have to type in commands to, for example, calculage a mean or standard deviation, display a graph etc. However, R has several big advantages:",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Software required</span>"
-    ]
-  },
-  {
-    "objectID": "software.html#why-r-rather-than-excel-minitab-or-spss",
-    "href": "software.html#why-r-rather-than-excel-minitab-or-spss",
-    "title": "7  Software required",
-    "section": "",
-    "text": "you can save your set of commands in an ordinary text file. When you want to repeat or modify any analyses or graphs 6 months later, simply go back and make minor edits.\nYour analysis is therefore “reproducible”.\nIn Excel, Minitab etc. you need to remember exactly which check-box and menus to click: if you are like me you will have forgotten;\neven moderately complex analyses, including some that you will do in NES2303, are impossible in Excel etc;\nGovernment bodies (including NHS, Natural England), media organisations including BBC, Financial Times, The Guardian), Research Institutes (including Centre for Ecology and Hydrology, Francis Crick Institute), all universities (internationally and UK) use to analyse and visualise R\nIncreases your employability It looks great on your CV after you graduate as it demonstrates you are also a data scientist!",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Software required</span>"
-    ]
-  },
-  {
-    "objectID": "stage3.html",
-    "href": "stage3.html",
-    "title": "9  Stage 3 Research Projects",
-    "section": "",
-    "text": "Many of the skills you learn in NES2303 will be essential for your Stage 3 research or literature review projects. This is not just your computer and analytical skills, but also critical thinking and problem solving. Indeed, a not uncommon conversation between academic staff and students when scoping their projects is along the lines of:\n\nStudent: I’d like to do a project on badgers / DNA / bacteria / phylogeny (delete as applicable)\n\n\nStaff: What exactly do you want to find out about badgers / DNA / bacteria / phylogeny?\n\n\nStudent: I’m really interested in them!\n\n\nStaff: But what is the research question?\n\nAs you progress through the rest of Stage 2, and especially in Stage 3, you will find that you are designing more experiments and surveys yourself, rather than being given a laboratory manual or field guide to follow like a cookery recipe. This, of course, is what real scientific research is like: there isn’t an absent-minded academic stood nearby to tell you exactly what to do. You need to be able to deconstruct what you plan to do, in order to create a sensible, practical experiment or survey, that provide data of sufficient quality for you to interpret.\nWhen Stage 3 students approach me wanting to do a research project under my supervision, a common starting point is them saying something along the lines of “I want to do a research project on butterflies”, or “I’m interested in pollinator conservation”, or “I want to follow a career in mammal conservation”. These might be valid statements, but my immediate response is to ask “What is the question?”, in other words, “What is it specifically that you want to determine?”. So, taking those examples, it would be better to have something along the lines of:\n\nAre the numbers of butterflies higher in roadside verges where the vegetation is cut monthly compared to once per year?\nDo bumblebees occur more frequently near fields of mass-flowering crops such as oilseed rape?\nIs the frequency of small mammals detected in camera traps associated with supplementary feed for game birds?\n\nIt is only when the students’ initial statements are re-phrased into questions that we can start to sketch out possible routes by which you can develop formal scientific hypotheses to test with your statistical model, develop a sampling strategy, do the experiment / survey etc. Another common mistake is to confuse aims and objectives. The three bullet points above are still quite general, and might be considered as overall aims. Objectives are much more specific, and might encompass pilot studies to test methodology, or detailed studies of other variables. For example, in the butterfly study, two obvious objectives might be to see if the numbers of species of plants or the numbers of flowers \\(m^2\\)differed according to cutting regime.\nTherefore, when planning your research, a good strategy is to:\n\nScope subject area, including literature review\nDefine overall aim and the hypothesis / hypotheses you want to test\nDefine specific objectives\nPilot study (ideally) or use literature. This is useful to give you an understanding of the ‘effect size’ (more later) you are trying to detect, and thus the numbers or frequency of replicate samples that might be needed\nDesign your experiment or survey.\nUndertake your experiment or survey, keeping careful laboratory or field records.\nEnter your data into a computer (often Excel, but if using maps specialist GIS software may be better).\nImport your data into R. If needed pre-process it to make it suitable for graphing or analysis. This always takes longer than you expect. Think your analyses before you data collection to minimise pre-processing\nCreate summary tables, charts, figures. Get a broad understanding of your data.\nStatistical model of your data. Formal tests of hypotheses.\nCheck assumptions of your model. All statistical models make certain assumptions about the input data which need to be checked;\nInterpret model; if necessary modify and re-run different models and compare them. Remember: “All models are wrong, but some are useful!”\nWrite up your report (see tips below)",
-    "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Stage 3 Research Projects</span>"
-    ]
-  },
-  {
-    "objectID": "reports.html",
-    "href": "reports.html",
-    "title": "10  The last part of any quantitative modelling",
-    "section": "",
-    "text": "Depending on your preferences, this is either the easiest part, or the most difficult! Analysing and interpretating your data is not the whole story: you have to write it up as a report. Personally, I often find this the most difficult step, as I easily get writer’s block, especially if I start up Microsoft Word, type in the word Introduction and look at a blank, white screen. Most reports you will write on this and other courses, especially Stage 3, and for your Stage 3 project, will probably follow the format of\n\nAbstract\nIntroduction\nMethods\nResults\nDiscussion\nReferences\n\nThat might be how it is written, but the order I often find myself writing scientific papers is along the lines of:\n\nMethods (I know what I did, so this is easy to write. Phew! One section written…)\nResults (I know what I’ve obtained from my analyses, and have created various graphs and tables to support them. Making progress, two sections written…)\nDiscussion (now I can go ahead and interpret my results in the context of existing scientific literature, discuss where it accords or contrasts with previous research, and explore possibilities for further research…)\nIntroduction (given that the rest has now been written, this is much easier to write as I know what I’m about to introduce.)\nReferences (of course, before you even begin your experiments / surveys, you need to have a good knowledge of the literature. I recommend you also use bibliographic software, such as Zotero, which automatically creates references for you)\nAbstract (a good abstract is suprisingly difficult to write. It needs to be concise, precises, and quickly communicate your findings. A good title is of course also essential.)\n\nMany scientists use the “hourglass” model as a way of thinking about how to structure scientific papers which you may have come across in Stage 1:\n\nI also particularly recommend you look at this post which describes the 5 key paragraphs of any scientific paper. It is written by an ecologist, but is actually applicable to any discipline. The same site also provides some useful tricks for clear writing.",
-    "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>The last part of any quantitative modelling</span>"
-    ]
-  },
-  {
     "objectID": "signal_noise.html",
     "href": "signal_noise.html",
     "title": "\n4  Signal and noise\n",
@@ -287,6 +97,196 @@
     "text": "4.3 Noisier data\nBut what if you had obtained a graph like this?\n\n\n\n\nBoxplot of lab experiment or field survey with more noise\n\n\n\nSo whilst the new treatment is still having having a similar effect, with the control at about 150, and the new treatment around 170, the noise is much bigger, as shown by the much bigger boxes and whiskers. Indeed, on the first graph the vertical axis only goes from 130 to 180, whereas here it goes from 0 to 300 given how much noisier the data is. You can think of this as:\n\nMethane or birds = Feedstock or field management + noise\n\nWhilst the signal (methane or birds) still has a big box, the noise has become much worse, making it harder to understand. Thus, whilst a visual assessment of your data is useful when you have clear differences, you need more powerful methods when the data are noisy. These formal methods of data analysis are what you’ll learn in this module, and they’ll allow you to determine whether the differences you see in your data are statistically significant, or whether they could have occurred by chance. Most of these methods work by assessing the signal to noise ratio in your data, to help you decide if the differences are real.\nI’ve used an example here with a categorical explanatory variable (feedstock or field management), but the same principles apply to continuous explanatory variables, such as temperature or time. The key point is that you need to assess the signal to noise ratio in your data to determine whether the differences you see are real or just due to random variation.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Signal and noise</span>"
+    ]
+  },
+  {
+    "objectID": "structure.html",
+    "href": "structure.html",
+    "title": "5  NES2303 Course structure",
+    "section": "",
+    "text": "5.1 Lecture structure\nAn Introductory lecture from Roy Sanderson (Module Leader) in Week 4, ‘quantitative foundations’ lecture in Week 5, and a final informal Question and Answer session in Week 14 to answer any outstanding queries on your understanding of course content, and help you prepare for the Summative Assessment in January.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NES2303 Course structure</span>"
+    ]
+  },
+  {
+    "objectID": "structure.html#interactive-websites",
+    "href": "structure.html#interactive-websites",
+    "title": "5  NES2303 Course structure",
+    "section": "5.2 Interactive websites",
+    "text": "5.2 Interactive websites\nWe have created interactive websites for this course, for you to learn and practice ideas before and after the practicals. These websites include simple quizzes to test your understanding. In the practicals you will be able to explore the example data shown on the websites in more depth, and hone your skills using new data. If you study the interactive websites before attending the relevant practical, you will find the latter much simpler, and gain more from it.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NES2303 Course structure</span>"
+    ]
+  },
+  {
+    "objectID": "structure.html#computer-classes",
+    "href": "structure.html#computer-classes",
+    "title": "5  NES2303 Course structure",
+    "section": "5.3 Computer classes",
+    "text": "5.3 Computer classes\nThese are scheduled for seven weeks (Week 4 to Week 11 - Week 10 is ‘Enrichment Week’ with no teaching) in the main Herschel Building cluster room (Fell) on the first floor.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NES2303 Course structure</span>"
+    ]
+  },
+  {
+    "objectID": "structure.html#ten-minute-videos-tmv",
+    "href": "structure.html#ten-minute-videos-tmv",
+    "title": "5  NES2303 Course structure",
+    "section": "5.4 Ten-minute videos (TMV)",
+    "text": "5.4 Ten-minute videos (TMV)\nI have prepared a series of short (5 to 10 minutes) animated videos to explain in simple, non-technical terms some quantitative biology concepts. These have been gradually introduced to the course over the last 2 years, and students have found them helpful. They deliberately avoid complex maths, and build up key concepts sequentially to aid your understanding.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NES2303 Course structure</span>"
+    ]
+  },
+  {
+    "objectID": "structure.html#cheatsheet",
+    "href": "structure.html#cheatsheet",
+    "title": "5  NES2303 Course structure",
+    "section": "5.5 Cheatsheet",
+    "text": "5.5 Cheatsheet\nThere is a lot of new information to absorb in this module so I’ve prepared a 2-page quick-reference “cheatsheet” with the main statistical analyses. This will probably be incomprehensible to you at the start of this course (don’t panic!), but should soon be a valuable resource to help you as you progress and develop your understanding.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NES2303 Course structure</span>"
+    ]
+  },
+  {
+    "objectID": "structure.html#managing-your-workload",
+    "href": "structure.html#managing-your-workload",
+    "title": "5  NES2303 Course structure",
+    "section": "5.6 Managing your workload",
+    "text": "5.6 Managing your workload\nThis is a 10-credit module so assumes you will devote 100 hours of study time. There are 7 practicals and two lectures, so you would theoretically do 86 hours of self-directed study. In practice, you won’t need 86 hours (phew!) but please do make use of the extensive online resources on Canvas, especially the Ten-Minute Videos and Interactive Websites. I have provided a page on Canvas to help you plan and manage the workload for NES2303, with a week-by-week diary throughout Semester One.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NES2303 Course structure</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html",
+    "href": "weekly.html",
+    "title": "6  Detailed structure of this course",
+    "section": "",
+    "text": "6.1 Section Zero - Orientation practical\nThis will simply be to help you setup R/RStudio on an NUIT PC, understand files, folders, filetypes, R packages etc.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html#section-one---summarising-and-displaying-data",
+    "href": "weekly.html#section-one---summarising-and-displaying-data",
+    "title": "6  Detailed structure of this course",
+    "section": "6.2 Section One - Summarising and displaying data",
+    "text": "6.2 Section One - Summarising and displaying data\nThis will cover simple statistics, including measures of central tendency and variation in your data.\n\nStatistical power and hypothesis tests will be covered.\nHow do you know if two treatments are different?\nHow do you know if one variable is correlated with an other?\nWhat are p-values, what are their uses, and their abuses.\nWhat are effect sizes?\n\nThis section will also provide guidance on good methods to visualise your data. Data visualisation is essential both prior to data analysis, as well as to communicate your results.\n\n6.2.1 Interactive websites\nIntroducing R and RStudio Data summaries and visualisation Understanding measures of central tendancy and variation\n\n\n6.2.2 Practical\nPractice examples from interactive websites",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html#section-two---linear-models-and-anova",
+    "href": "weekly.html#section-two---linear-models-and-anova",
+    "title": "6  Detailed structure of this course",
+    "section": "6.3 Section Two - Linear models and ANOVA",
+    "text": "6.3 Section Two - Linear models and ANOVA\nLearn about the concept of linear models, the R lm and anova functions, and how to interpret them. Understand the assumptions behind linear models, and look at examples where the explanatory variables are continuous or categorical.\n\n6.3.1 Interactive websites\nLinear models with continuous explanatory variables Linear models with categorical explanatory variables\n\n\n6.3.2 Practical\nPractice examples from interactive webistes",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html#section-three---dealing-with-multiple-explanatory-variables",
+    "href": "weekly.html#section-three---dealing-with-multiple-explanatory-variables",
+    "title": "6  Detailed structure of this course",
+    "section": "6.4 Section Three - Dealing with multiple explanatory variables",
+    "text": "6.4 Section Three - Dealing with multiple explanatory variables\nThis section explores situations where you might have multiple explanatory variables. These might not be independent in their effects, so we explore interactions between them, and how to understand them. We also consider ways in which you can improve your experimental design by blocking, and look at what to do if things go wrong and you lose some data. We also consider how ANOVA operates - what are the basic concepts of an ANOVA table, and how are we able to study treatment effects by looking at variances?\n\n6.4.1 Interactive websites\nMultiple explanatory variables, interactions, blocks and missing data Understanding how sums of squares are used in linear models\n\n\n6.4.2 Practical\nPractice examples from interactive webistes",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html#section-four---generalised-linear-models",
+    "href": "weekly.html#section-four---generalised-linear-models",
+    "title": "6  Detailed structure of this course",
+    "section": "6.5 Section Four - Generalised linear models",
+    "text": "6.5 Section Four - Generalised linear models\nThe assumptions behind linear models, accessed through the lm() function in R, are breached when our response data consists of counts, proportions, or yes / no, true / false, dead / alive. We can extend linear models by generalising them using the glm() function. This sections shows you the two key statistical distributions relevant to these types of data, the Poisson and Binomial distributions, and how they relate the the traditional Gaussian (normal) distribution used in linear models.\n\n6.5.1 Interactive website\nGeneralised linear models\n\n\n6.5.2 Practical\nPractice examples from interactive webistes",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html#section-five---multiple-response-data-unconstrained-ordination",
+    "href": "weekly.html#section-five---multiple-response-data-unconstrained-ordination",
+    "title": "6  Detailed structure of this course",
+    "section": "6.6 Section Five - Multiple response data; unconstrained ordination",
+    "text": "6.6 Section Five - Multiple response data; unconstrained ordination\nSometimes you will not have a single response measurement, but might have 10, 20, 50, or hundreds. If you are dealing with genomic or bioinformatic data, you might have thousands of gene sequences that you want to understand. If you do surveys of plants, birds or insects you may have large numbers of species. It is not correct to do hundreds of separate (g)lms on these data, but multivariate techniques (MVT) provide an effective way to help you interpret them. In this section we introduce you to unconstrained ordination, which allows you to visualise relationships amongst your data. You can also make simple comparisons with potential explanatory variables.\n\n6.6.1 Interactive website\nUnconstrained ordination\n\n\n6.6.2 Practical\nPractice examples from interactive webistes",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html#section-six---multiple-response-data-constrained-ordination",
+    "href": "weekly.html#section-six---multiple-response-data-constrained-ordination",
+    "title": "6  Detailed structure of this course",
+    "section": "6.7 Section Six - Multiple response data; constrained ordination",
+    "text": "6.7 Section Six - Multiple response data; constrained ordination\nHere we demonstrate more advanced methods of using your explanatory data when you are working with multiple response variables. You will learn about permutation tests, which allow you to ‘simulate’ conventional ANOVA tests, such that you can infer the importance of your explanatory variables. We also discuss the best ways of visualising the results of these analyses. Advice from Roy Sanderson (SNES) advice on report-writing, planning research projects in Stage 3 etc.\n\n6.7.1 Interactive website\nConstrained ordination\n\n\n6.7.2 Practical\nPractice examples from interactive websites",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "weekly.html#online-appendix-on-other-tests",
+    "href": "weekly.html#online-appendix-on-other-tests",
+    "title": "6  Detailed structure of this course",
+    "section": "6.8 Online Appendix on “Other Tests”",
+    "text": "6.8 Online Appendix on “Other Tests”\nOther tests, such as t.tests, paired t.tests, rank-based tests, Chi-squared tests. These all fit into the (generalised) linear model framework. Comparison of the standard (base) R commands and the equivalent via lm() or glm()\n\n6.8.1 Interactive website\nAppendix - other tests",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Detailed structure of this course</span>"
+    ]
+  },
+  {
+    "objectID": "assessments.html",
+    "href": "assessments.html",
+    "title": "7  Assessments",
+    "section": "",
+    "text": "There will be two assessments, both delivered through Canvas, to test your skills and understanding. The format will be multiple choice and numeric answers (based on datasets for you to download and analyse)\n\n“formative” assessment, probably mid- to late-November. This does not count towards your mark for NES2303, but will give you practice in using the Canvas system for online assessments. Probably released in late November.\n“summative” assessment, worth 100% of the course marks. This can be completed in your own time, during the standard Semester One assessment period. Again, it is a Canvas-based test.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Assessments</span>"
+    ]
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "8  Software required",
+    "section": "",
+    "text": "8.1 Why R rather than Excel, Minitab or SPSS?\nCommercial packages such as Excel, Minitab and SPSS have a “shallow” initial learning curve, as they are based on familiar point-and-click menu-driven systems. R is much tougher initially, as you have to type in commands to, for example, calculage a mean or standard deviation, display a graph etc. However, R has several big advantages:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Software required</span>"
+    ]
+  },
+  {
+    "objectID": "software.html#why-r-rather-than-excel-minitab-or-spss",
+    "href": "software.html#why-r-rather-than-excel-minitab-or-spss",
+    "title": "8  Software required",
+    "section": "",
+    "text": "you can save your set of commands in an ordinary text file. When you want to repeat or modify any analyses or graphs 6 months later, simply go back and make minor edits.\nYour analysis is therefore “reproducible”.\nIn Excel, Minitab etc. you need to remember exactly which check-box and menus to click: if you are like me you will have forgotten;\neven moderately complex analyses, including some that you will do in NES2303, are impossible in Excel etc;\nGovernment bodies (including NHS, Natural England), media organisations including BBC, Financial Times, The Guardian), Research Institutes (including Centre for Ecology and Hydrology, Francis Crick Institute), all universities (internationally and UK) use to analyse and visualise R\nIncreases your employability It looks great on your CV after you graduate as it demonstrates you are also a data scientist!",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Software required</span>"
+    ]
+  },
+  {
+    "objectID": "stage3.html",
+    "href": "stage3.html",
+    "title": "9  Stage 3 Research Projects",
+    "section": "",
+    "text": "Many of the skills you learn in NES2303 will be essential for your Stage 3 research or literature review projects. This is not just your computer and analytical skills, but also critical thinking and problem solving. Indeed, a not uncommon conversation between academic staff and students when scoping their projects is along the lines of:\n\nStudent: I’d like to do a project on badgers / DNA / bacteria / phylogeny (delete as applicable)\n\n\nStaff: What exactly do you want to find out about badgers / DNA / bacteria / phylogeny?\n\n\nStudent: I’m really interested in them!\n\n\nStaff: But what is the research question?\n\nAs you progress through the rest of Stage 2, and especially in Stage 3, you will find that you are designing more experiments and surveys yourself, rather than being given a laboratory manual or field guide to follow like a cookery recipe. This, of course, is what real scientific research is like: there isn’t an absent-minded academic stood nearby to tell you exactly what to do. You need to be able to deconstruct what you plan to do, in order to create a sensible, practical experiment or survey, that provide data of sufficient quality for you to interpret.\nWhen Stage 3 students approach me wanting to do a research project under my supervision, a common starting point is them saying something along the lines of “I want to do a research project on butterflies”, or “I’m interested in pollinator conservation”, or “I want to follow a career in mammal conservation”. These might be valid statements, but my immediate response is to ask “What is the question?”, in other words, “What is it specifically that you want to determine?”. So, taking those examples, it would be better to have something along the lines of:\n\nAre the numbers of butterflies higher in roadside verges where the vegetation is cut monthly compared to once per year?\nDo bumblebees occur more frequently near fields of mass-flowering crops such as oilseed rape?\nIs the frequency of small mammals detected in camera traps associated with supplementary feed for game birds?\n\nIt is only when the students’ initial statements are re-phrased into questions that we can start to sketch out possible routes by which you can develop formal scientific hypotheses to test with your statistical model, develop a sampling strategy, do the experiment / survey etc. Another common mistake is to confuse aims and objectives. The three bullet points above are still quite general, and might be considered as overall aims. Objectives are much more specific, and might encompass pilot studies to test methodology, or detailed studies of other variables. For example, in the butterfly study, two obvious objectives might be to see if the numbers of species of plants or the numbers of flowers \\(m^2\\)differed according to cutting regime.\nTherefore, when planning your research, a good strategy is to:\n\nScope subject area, including literature review\nDefine overall aim and the hypothesis / hypotheses you want to test\nDefine specific objectives\nPilot study (ideally) or use literature. This is useful to give you an understanding of the ‘effect size’ (more later) you are trying to detect, and thus the numbers or frequency of replicate samples that might be needed\nDesign your experiment or survey.\nUndertake your experiment or survey, keeping careful laboratory or field records.\nEnter your data into a computer (often Excel, but if using maps specialist GIS software may be better).\nImport your data into R. If needed pre-process it to make it suitable for graphing or analysis. This always takes longer than you expect. Think your analyses before you data collection to minimise pre-processing\nCreate summary tables, charts, figures. Get a broad understanding of your data.\nStatistical model of your data. Formal tests of hypotheses.\nCheck assumptions of your model. All statistical models make certain assumptions about the input data which need to be checked;\nInterpret model; if necessary modify and re-run different models and compare them. Remember: “All models are wrong, but some are useful!”\nWrite up your report (see tips below)",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Stage 3 Research Projects</span>"
+    ]
+  },
+  {
+    "objectID": "reports.html",
+    "href": "reports.html",
+    "title": "10  The last part of any quantitative modelling",
+    "section": "",
+    "text": "Depending on your preferences, this is either the easiest part, or the most difficult! Analysing and interpretating your data is not the whole story: you have to write it up as a report. Personally, I often find this the most difficult step, as I easily get writer’s block, especially if I start up Microsoft Word, type in the word Introduction and look at a blank, white screen. Most reports you will write on this and other courses, especially Stage 3, and for your Stage 3 project, will probably follow the format of\n\nAbstract\nIntroduction\nMethods\nResults\nDiscussion\nReferences\n\nThat might be how it is written, but the order I often find myself writing scientific papers is along the lines of:\n\nMethods (I know what I did, so this is easy to write. Phew! One section written…)\nResults (I know what I’ve obtained from my analyses, and have created various graphs and tables to support them. Making progress, two sections written…)\nDiscussion (now I can go ahead and interpret my results in the context of existing scientific literature, discuss where it accords or contrasts with previous research, and explore possibilities for further research…)\nIntroduction (given that the rest has now been written, this is much easier to write as I know what I’m about to introduce.)\nReferences (of course, before you even begin your experiments / surveys, you need to have a good knowledge of the literature. I recommend you also use bibliographic software, such as Zotero, which automatically creates references for you)\nAbstract (a good abstract is suprisingly difficult to write. It needs to be concise, precises, and quickly communicate your findings. A good title is of course also essential.)\n\nMany scientists use the “hourglass” model as a way of thinking about how to structure scientific papers which you may have come across in Stage 1:\n\nI also particularly recommend you look at this post which describes the 5 key paragraphs of any scientific paper. It is written by an ecologist, but is actually applicable to any discipline. The same site also provides some useful tricks for clear writing.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>The last part of any quantitative modelling</span>"
     ]
   },
   {
