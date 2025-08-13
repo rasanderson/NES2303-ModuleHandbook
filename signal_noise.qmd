@@ -29,13 +29,14 @@ ggplot(data, aes(x = feedstock, y = production)) +
        y = "Methane production or number of birds seen") +
   theme_classic()
 ```
-Well that looks fairly obvious: your new bioreactor feedstock or wildflower field management treatment is having the positive effect you hoped for. Yes, there is a bit of noise in the data, but the differences are still clear. The median, shown by the horizontal line in each box, is roughly 150 for the control, and roughly 170 for your new treatment. You can think of this example as:
+
+Well that looks fairly obvious: your new bioreactor feedstock or wildflower field management treatment is having the positive effect you hoped for. The median, shown by the horizontal line in each box, is roughly 150 for the control, and roughly 170 for your new treatment. Yes, there is a bit of noise in the data, but the differences are still clear. You can think of this example as:
 
 ::: center
-[Methane or birds]{.bigger-boxed} \= [Feedstock or field management]{.boxed} + [noise]{.boxed}
+[Methane or birds]{.boxed} \= [Treatment]{.bigger-boxed} + [noise]{.boxed}
 :::
 
-So whilst there is **noise** in your system, the **signal** (methane or birds) is much more important, as shown by the bigger box, it is still obvious what is going on. Thus, when measuring the **signal to noise ratio** the signal is much bigger than the noise.
+Your response is of course methane production or bird diversity. The **signal** from your treatment (feedstock type or field management) on your response is much more important than the random **noise**, as shown by the bigger box, so it is still obvious what is going on in your graph. Thus, when measuring the **signal to noise ratio** the signal from your treatment is much bigger than the unexplained random noise, so you will have a big signal to noise ratio. This is a good situation to be in, and you can be confident that your treatment is having an effect.
 
 ## Noisier data
 But what if you had obtained a graph like this?
@@ -57,12 +58,13 @@ ggplot(data, aes(x = feedstock, y = production)) +
        y = "Methane production or number of birds seen") +
   theme_classic()
 ```
-So whilst the new treatment is still having having a similar effect, with the control at about 150, and the new treatment around 170, the noise is much bigger, as shown by the much bigger boxes and whiskers. Indeed, on the first graph the vertical axis only goes from 130 to 180, whereas here it goes from 0 to 300 given how much noisier the data is. You can think of this as:
+
+The control is still at about 150, and the new treatment still around 170. But the random noise is much bigger, as shown by the much bigger boxes and whiskers. Indeed, on the first graph the vertical axis only goes from 130 to 180, whereas here it goes from 0 to 300 to encompass the much noisier data. You can think of this as:
 
 ::: center
-[Methane or birds]{.bigger-boxed} \= [Feedstock or field management]{.boxed} + [noise]{.bigger-boxed}
+[Methane or birds]{.boxed} \= [Treatment]{.bigger-boxed} + [noise]{.bigger-boxed}
 :::
 
-Whilst the **signal** (methane or birds) still has a big box, the **noise** has become much worse, making it harder to understand. Thus, whilst a visual assessment of your data is useful when you have clear differences, you need more powerful methods when the data are noisy. These formal methods of data analysis are what you'll learn in this module, and they'll allow you to determine whether the differences you see in your data are statistically significant, or whether they could have occurred by chance. Most of these methods work by assessing the **signal to noise ratio** in your data, to help you decide if the differences are real.
+Whilst the **signal** from your treatment (feedstock type or field management) still has a big box, the random **noise** has become much worse, making it harder to understand. Thus, whilst a visual assessment of your data is useful when you have clear differences, you need more powerful methods when the data are noisy. These formal methods of data analysis are what you'll learn in this module, and they'll allow you to determine whether the differences you see in your data are statistically significant, or whether they could have occurred by chance. Most of these methods work by assessing the **signal to noise ratio** in your data, to help you decide if the differences are real. In this second example, the signal to noise ratio is much smaller, meaning that the differences you see could be due to random variation rather than a real effect of your treatment.
 
 I've used an example here with a categorical explanatory variable (feedstock or field management), but the same principles apply to continuous explanatory variables, such as temperature or time. The key point is that you need to assess the signal to noise ratio in your data to determine whether the differences you see are real or just due to random variation.

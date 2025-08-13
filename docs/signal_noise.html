@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>4&nbsp; Signal and noise – NES2303 Module Handbook</title>
 <style>
@@ -34,10 +34,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-edcf764b4c6861f018908e5f74427b2f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -225,11 +225,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Well that looks fairly obvious: your new bioreactor feedstock or wildflower field management treatment is having the positive effect you hoped for. Yes, there is a bit of noise in the data, but the differences are still clear. The median, shown by the horizontal line in each box, is roughly 150 for the control, and roughly 170 for your new treatment. You can think of this example as:</p>
+<p>Well that looks fairly obvious: your new bioreactor feedstock or wildflower field management treatment is having the positive effect you hoped for. The median, shown by the horizontal line in each box, is roughly 150 for the control, and roughly 170 for your new treatment. Yes, there is a bit of noise in the data, but the differences are still clear. You can think of this example as:</p>
 <div class="center">
-<p><span class="bigger-boxed">Methane or birds</span> = <span class="boxed">Feedstock or field management</span> + <span class="boxed">noise</span></p>
+<p><span class="boxed">Methane or birds</span> = <span class="bigger-boxed">Treatment</span> + <span class="boxed">noise</span></p>
 </div>
-<p>So whilst there is <strong>noise</strong> in your system, the <strong>signal</strong> (methane or birds) is much more important, as shown by the bigger box, it is still obvious what is going on. Thus, when measuring the <strong>signal to noise ratio</strong> the signal is much bigger than the noise.</p>
+<p>Your response is of course methane production or bird diversity. The <strong>signal</strong> from your treatment (feedstock type or field management) on your response is much more important than the random <strong>noise</strong>, as shown by the bigger box, so it is still obvious what is going on in your graph. Thus, when measuring the <strong>signal to noise ratio</strong> the signal from your treatment is much bigger than the unexplained random noise, so you will have a big signal to noise ratio. This is a good situation to be in, and you can be confident that your treatment is having an effect.</p>
 </section><section id="noisier-data" class="level2" data-number="4.3"><h2 data-number="4.3" class="anchored" data-anchor-id="noisier-data">
 <span class="header-section-number">4.3</span> Noisier data</h2>
 <p>But what if you had obtained a graph like this?</p>
@@ -241,11 +241,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>So whilst the new treatment is still having having a similar effect, with the control at about 150, and the new treatment around 170, the noise is much bigger, as shown by the much bigger boxes and whiskers. Indeed, on the first graph the vertical axis only goes from 130 to 180, whereas here it goes from 0 to 300 given how much noisier the data is. You can think of this as:</p>
+<p>The control is still at about 150, and the new treatment still around 170. But the random noise is much bigger, as shown by the much bigger boxes and whiskers. Indeed, on the first graph the vertical axis only goes from 130 to 180, whereas here it goes from 0 to 300 to encompass the much noisier data. You can think of this as:</p>
 <div class="center">
-<p><span class="bigger-boxed">Methane or birds</span> = <span class="boxed">Feedstock or field management</span> + <span class="bigger-boxed">noise</span></p>
+<p><span class="boxed">Methane or birds</span> = <span class="bigger-boxed">Treatment</span> + <span class="bigger-boxed">noise</span></p>
 </div>
-<p>Whilst the <strong>signal</strong> (methane or birds) still has a big box, the <strong>noise</strong> has become much worse, making it harder to understand. Thus, whilst a visual assessment of your data is useful when you have clear differences, you need more powerful methods when the data are noisy. These formal methods of data analysis are what you’ll learn in this module, and they’ll allow you to determine whether the differences you see in your data are statistically significant, or whether they could have occurred by chance. Most of these methods work by assessing the <strong>signal to noise ratio</strong> in your data, to help you decide if the differences are real.</p>
+<p>Whilst the <strong>signal</strong> from your treatment (feedstock type or field management) still has a big box, the random <strong>noise</strong> has become much worse, making it harder to understand. Thus, whilst a visual assessment of your data is useful when you have clear differences, you need more powerful methods when the data are noisy. These formal methods of data analysis are what you’ll learn in this module, and they’ll allow you to determine whether the differences you see in your data are statistically significant, or whether they could have occurred by chance. Most of these methods work by assessing the <strong>signal to noise ratio</strong> in your data, to help you decide if the differences are real. In this second example, the signal to noise ratio is much smaller, meaning that the differences you see could be due to random variation rather than a real effect of your treatment.</p>
 <p>I’ve used an example here with a categorical explanatory variable (feedstock or field management), but the same principles apply to continuous explanatory variables, such as temperature or time. The key point is that you need to assess the signal to noise ratio in your data to determine whether the differences you see are real or just due to random variation.</p>
 
 
@@ -331,8 +331,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -443,7 +441,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
