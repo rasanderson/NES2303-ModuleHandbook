@@ -57,7 +57,7 @@ format:
     include-before: |
       \thispagestyle{empty}
       \begin{center}
-      \includegraphics[width=\textwidth]{cover.jpg}
+      \includegraphics[width=\textwidth]{cover.png}
       \end{center}
       \newpage
   

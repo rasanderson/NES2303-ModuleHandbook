@@ -68,5 +68,7 @@ _main.*
 tmp-pdfcrop-*
 # figures
 /.quarto/
+docs/
+signal_noise_files/
 
 /.luarc.json
